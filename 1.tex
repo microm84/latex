@@ -1,9 +1,55 @@
+\documentclass{article}
+\usepackage{amsmath}
 \begin{document}
 
-$f_{jt} = \frac{max[n_{jt}^{up}, n_{jt}^{down}]}{n_{jt}^{up} + n^{down}_{jt}}$
+myy2000 \\
+p. 219 (1)
+$$ f_{jt} = \frac{max[n_{jt}^{up}, n_{jt}^{down}]}{n_{jt}^{up} + n^{down}_{jt}} $$
+p. 221 (5)
+$$ f_j = \frac{1}{T} 
+    \displaystyle\sum_t \frac{max[n_{jt}^{up}, n_{jt}^{down}]}
+    {n_{jt}^{up} + n_{jt}^{down}} = 
+    \frac{1}{T} \displaystyle\sum_t f_{jt} $$
+p. 222 (6)
+$$ r_{it} = \alpha_i + \beta_{1,i} r_{m,jt} + 
+    \beta_{2,i} [r_{US,t} + e_{jt}] + \varepsilon_{it} $$
+p. 225 (7)
+$$ R_j^2 = \frac{\sum_i (R_{ij}^2 \times SST_{i,j})}{\sum_i SST_{i,j}} $$
+p. 229 (8)
+$$ \Psi_j = \log(\frac{f_j - 0.5}{1 - f_j}) $$
+p. 229 (9)
+$$ \Upsilon_j = \log(\frac{R_j^2}{1 - R_j^2}) $$
+p. 246 (16)
+$$ R_j^2 = \frac{\sum_{i \in j} R_{i,j}^2 SST_{i,j}}{\sum_{i \in j}SST_{i,j}} =
+    \frac{\sum_{i \in j} \frac{\sigma_{m,i,j}^2}{\sigma_{m,i,j}^2 + \sigma_{\epsilon,i,j}^2}
+    (\sigma_{m,i,j}^2 + \sigma_{\epsilon,i,j}^2)}
+    {\sum_{i \in j} (\sigma_{m,i,j}^2 + \sigma_{\epsilon,i,j}^2)} $$
+p. 246 (17)
+$$ \Upsilon_j = \log\bigg(\frac{\sigma_{m,j}^2}{\sigma_{\epsilon,j}^2}\bigg) =
+    \log(\sigma_{m,j}^2) - \log(\sigma_{\epsilon, j}^2)$$
+p. 247 (18)
+$$ \log(\sigma_{\epsilon,j}^2) = c_0 + c_1 \log y_i + c_2 \log n_j +
+    \boldsymbol{c} \cdot \boldsymbol{x}_j + c_3 g_j + u_j $$
+p. 247 (19)
+$$ \log(\sigma_{m,j}^2) = c_0 + c_1 \log y_i + c_2 \log n_j +
+    \boldsymbol{c} \cdot \boldsymbol{x}_j + c_3 g_j + u_j $$
 
-$f_j = \frac{1}{T} \displaystyle\sum_t \frac{max[n_{jt}^{up}, n_{jt}^{down}]}{n_{jt}^{up} + n_{jt}^{down}} = \frac{1}{T} \displaystyle\sum_t f_{jt}$
 
-$r_{it} = \alpha_i + \beta_{1, i} r_{m, jt} + \beta_{2, i} [r_{US, t} + e_{jt}] + \varepsilon_{it}$
+\begin{equation}
+    r_t = a + b_0 \Delta E_t + 
+    \sum_\tau b_\tau \Delta E_{t + \tau} + 
+    \sum_\tau c_\tau r_{t + \tau} + u_t
+\end{equation}
+
+\begin{equation}
+    FERC \equiv \sum_\tau b_\tau
+\end{equation}
+
+\begin{equation}
+    FINC \equiv R_{r_t = a + b_0 \Delta E_t + 
+    \sum_\tau b_\tau \Delta E_{t + \tau} + 
+    \sum_\tau c_\tau r_{t + \tau} + u_t}^2 - 
+    R_{r_t = a + b_0 \Delta E_t + u_t}^2
+\end{equation}
 
 \end{document}
