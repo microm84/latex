@@ -1,17 +1,86 @@
 \documentclass{article}
 \usepackage{amsmath}
 \begin{document}
-
 1.a.
 The multiplier model:
 $$ max\ h_0 = \frac{u_1 O_{1,0} + u_2 O_{2,0}}{v_1 I_{1,0} + v_2 I_{2,0}} $$
 subject to:
 $$ \frac{u_1 O_{1,j} + u_2 O_{2,j}}{v_1 I_{1,j} + v_2 I_{2,j}} \leq 1; j = 1, ..., 12, $$
 $$ u_1, u_2, v_1, v_2 \geq 0. $$
+i.e., subject to:
+$$ \frac{450 u_1 + 45 u_2}{45 v_1 + 75 v_2} \leq 1 $$
+$$ \frac{528 u_1 + 176 u_2}{55 v_1 + 55 v_2} \leq 1 $$
+$$ \frac{525 u_1 + 525 u_2}{75 v_1 + 72 v_2} \leq 1 $$
+$$ \frac{192 u_1 + 576 u_2}{60 v_1 + 90 v_2} \leq 1 $$
+$$ \frac{100 u_1 + 1000 u_2}{100 v_1 + 100 v_2} \leq 1 $$
+$$ \frac{245 u_1 + 330 u_2}{55 v_1 + 50 v_2} \leq 1 $$
+$$ \frac{165 u_1 + 165 u_2}{55 v_1 + 65 v_2} \leq 1 $$
+$$ \frac{450 u_1 + 360 u_2}{90 v_1 + 55 v_2} \leq 1 $$
+$$ \frac{360 u_1 + 300 u_2}{60 v_1 + 55 v_2} \leq 1 $$
+$$ \frac{364 u_1 + 196 u_2}{56 v_1 + 60 v_2} \leq 1 $$
+$$ \frac{153 u_1 + 415 u_2}{61 v_1 + 60 v_2} \leq 1 $$
+$$ \frac{330 u_1 + 120 u_2}{60 v_1 + 60 v_2} \leq 1 $$
+$$ u_1, u_2, v_1, v_2 \geq 0. $$
 1.b.
 The envolopment model:
 $$ min\ f_0 = \frac{v_1 I_{1,0} + v_2 I_{2,0}}{u_1 O_{1,0} + u_2 O_{2,0}} $$
 subject to:
 $$ (v_1 I_{1,j} + v_2 I_{2,j}) - (u_1 O_{1,j} + u_2 O_{2,j}) \geq 0; j = 1, ..., 12, $$
+$$ u_1, u_2, v_1, v_2 \geq 0. $$
+i.e., subject to:
+$$ \begin{pmatrix}
+45 & 75 \\
+55 & 55 \\
+75 & 72 \\
+60 & 90 \\
+100 & 100 \\
+55 & 50 \\
+55 & 65 \\
+90 & 55 \\
+60 & 55 \\
+56 & 60 \\
+61 & 60 \\
+60 & 60
+\end{pmatrix}
+\times
+\begin{pmatrix}
+v_1 \\
+v_2
+\end{pmatrix}
+-
+\begin{pmatrix}
+450 & 45 \\
+528 & 176 \\
+525 & 525 \\
+192 & 576 \\
+100 & 1000 \\
+245 & 330 \\
+165 & 165\\
+450 & 360 \\
+360 & 300 \\
+364 & 196 \\
+153 & 415 \\
+330 & 120
+\end{pmatrix}
+\times
+\begin{pmatrix}
+u_1 \\
+u_2
+\end{pmatrix}
+\geq
+\begin{pmatrix}
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 \\
+0 
+\end{pmatrix} $$
 $$ u_1, u_2, v_1, v_2 \geq 0. $$
 \end{document}
