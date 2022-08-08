@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+1.a.
+The general multiplier model (output oriented model):
+$$ min\ g_0 = \sum_{i=1}^m \omega_i x_{i0} $$
+s.t.
+$$ - \sum_{r=1}^s \mu_r y_{rj} + \sum_{i=1}^m \omega_i x_{ij} \geq 0; j = 1, ..., n, $$
+$$ \sum_{r=1}^s \mu_r y_{r0} = 1, $$
+$$ \mu_r, \omega_i \geq 0. $$
+The multiplier model (output oriented model) for question 1: \\
+If we pick OMU 1,
+$$ min\ g_0 = 45 \omega_1 + 75 \omega_2 $$
+s.t.
+$$ - (450 \mu_1 + 45 \mu_2) + (45 \omega_1 + 75 \omega_2) \geq 0, $$
+$$ - (528 \mu_1 + 176 \mu_2) + (55 \omega_1 + 55 \omega_2) \geq 0, $$
+$$ - (525 \mu_1 + 525 \mu_2) + (75 \omega_1 + 72 \omega_2) \geq 0, $$
+$$ - (192 \mu_1 + 576 \mu_2) + (60 \omega_1 + 90 \omega_2) \geq 0, $$
+$$ - (100 \mu_1 + 1000 \mu_2) + (100 \omega_1 + 100 \omega_2) \geq 0, $$
+$$ - (245 \mu_1 + 330 \mu_2) + (55 \omega_1 + 50 \omega_2) \geq 0, $$
+$$ - (165 \mu_1 + 165 \mu_2) + (55 \omega_1 + 65 \omega_2) \geq 0, $$
+$$ - (450 \mu_1 + 360 \mu_2) + (90 \omega_1 + 55 \omega_2) \geq 0, $$
+$$ - (360 \mu_1 + 300 \mu_2) + (60 \omega_1 + 55 \omega_2) \geq 0, $$
+$$ - (364 \mu_1 + 196 \mu_2) + (56 \omega_1 + 60 \omega_2) \geq 0, $$
+$$ - (153 \mu_1 + 415 \mu_2) + (61 \omega_1 + 60 \omega_2) \geq 0, $$
+$$ - (330 \mu_1 + 120 \mu_2) + (60 \omega_1 + 60 \omega_2) \geq 0, $$
+$$ 450 \mu_1 + 45 \mu_2 = 1, $$
+$$ \mu_1, \mu_2, \omega_1, \omega_2 \geq 0. $$
+1.b.
+The general envolopment model (output oriented model):
+$$ max\ z_0 $$
+s.t.
+$$ - \sum_{j = 1}^n y_{rj} \lambda_j + y_{r0} z_0 \leq 0; r = 1, ..., s, $$
+$$ \sum_{j=1}^n x_{ij} \lambda_j \leq x_{i0}; i = 1, ..., m, $$
+$$ \lambda_j \geq 0; j = 1, ..., n. $$
+The envolopment model (output oriented model) for question 1: \\
+If we pick OMU 1,
+$$ max\ z_0 $$
+s.t.
+$$ 450 \lambda_1 + 528 \lambda_2 + 525 \lambda_3 + 192 \lambda_4 + 100 \lambda_5 + 245 \lambda_6 + 165 \lambda_7 + 450 \lambda_8 + 360 \lambda_9 + 364 \lambda_{10} + 153 \lambda_{11} + 330 \lambda_{12} \geq 450 z_0, $$
+$$ 45 \lambda_1 + 176 \lambda_2 + 525 \lambda_3 + 576 \lambda_4 + 1000 \lambda_5 + 330 \lambda_6 + 165 \lambda_7 + 360 \lambda_8 + 300 \lambda_9 + 196 \lambda_{10} + 415 \lambda_{11} + 120 \lambda_{12} \geq 45 z_0, $$
+$$ 45 \lambda_1 + 55 \lambda_2 + 75 \lambda_3 + 60 \lambda_4 + 100 \lambda_5 + 55 \lambda_6 + 55 \lambda_7 + 90 \lambda_8 + 60 \lambda_9 + 56 \lambda_{10} + 61 \lambda_{11} + 60 \lambda_{12} \leq 45, $$
+$$ 75 \lambda_1 + 55 \lambda_2 + 72 \lambda_3 + 90 \lambda_4 + 100 \lambda_5 + 50 \lambda_6 + 65 \lambda_7 + 55 \lambda_8 + 55 \lambda_9 + 60 \lambda_{10} + 60 \lambda_{11} + 60 \lambda_{12} \leq 75, $$
+$$ \lambda_1, ..., \lambda_{12} \geq 0. $$
+\end{document}
